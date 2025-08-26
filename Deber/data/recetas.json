@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Spaghetti Bolognese",
+    "imagen": "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg",
+    "ingredientes": ["Spaghetti", "Carne molida", "Tomate", "Cebolla", "Ajo"],
+    "url": "https://www.example.com/receta/spaghetti-bolognese"
+  },
+  {
+    "id": 2,
+    "nombre": "Ensalada César",
+    "imagen": "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg",
+    "ingredientes": ["Lechuga", "Pollo", "Crutones", "Queso parmesano", "Salsa César"],
+    "url": "https://www.example.com/receta/ensalada-cesar"
+  },
+  {
+    "id": 3,
+    "nombre": "Tacos al Pastor",
+    "imagen": "https://www.themealdb.com/images/media/meals/tacos.jpg",
+    "ingredientes": ["Tortilla", "Carne de cerdo", "Piña", "Cilantro", "Cebolla"],
+    "url": "https://www.example.com/receta/tacos-al-pastor"
+  }
+]

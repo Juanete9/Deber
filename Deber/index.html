@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orion Food</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Explora y añade recetas de cocina fácilmente." />
+</head>
+<body>
+
+  <header>
+    <h1 tabindex="0">🍲 OrionFood - una gama de Recetas de cocina a tu alcance</h1>
+   
+    <button id="toggle-theme" aria-label="Cambiar modo oscuro/claro" aria-pressed="false">🌓 Modo Oscuro</button>
+  </header>
+
+  <main>
+
+    <!-- Buscar receta -->
+    <form id="form-recetas" aria-label="Formulario de búsqueda de recetas" autocomplete="off">
+      <label for="busqueda" class="visually-hidden">Buscar receta</label>
+      <input type="text" id="busqueda" placeholder="Buscar recetas..." />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Ver todas las recetas -->
+    <button id="ver-todas" type="button">🍽️ Ver todas las recetas</button>
+
+    <!-- Añadir receta -->
+    <section aria-label="Añadir nueva receta" class="agregar-receta">
+      <h2>Añadir nueva receta</h2>
+       <h4 tabindex2="0">🍲 Con OrionFood tienes la oportunidad de compartir tus recetas y ayudar a muchas otras personas probar un toque de la dulzura de tu cocina</h4>
+      <form id="form-agregar">
+        <label for="nombre" class="visually-hidden">Nombre de la receta</label>
+        <input type="text" id="nombre" placeholder="Nombre de la receta" required />
+
+        <label for="ingredientes" class="visually-hidden">Ingredientes (separados por coma)</label>
+        <input type="text" id="ingredientes" placeholder="Ingredientes, separados por coma" required />
+
+        <label for="imagen" class="visually-hidden">URL de la imagen (opcional)</label>
+        <input type="url" id="imagen" placeholder="URL de la imagen (opcional)" />
+
+        <label for="url" class="visually-hidden">URL de la receta completa (opcional)</label>
+        <input type="url" id="url" placeholder="URL de la receta completa (opcional)" />
+
+        <button type="submit">Añadir receta</button>
+      </form>
+    </section>
+
+    <div id="loading" class="hidden">🔄 Cargando recetas...</div>
+    <p id="mensaje" class="info">Escribe un ingrediente o nombre para buscar recetas.</p>
+
+    <section id="resultados" aria-live="polite"></section>
+  </main>
+
+  <script src="js/base.js"></script>
+</body>
+</html>
